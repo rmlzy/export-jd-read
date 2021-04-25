@@ -1,0 +1,26 @@
+{
+  "name": "export_jd_read",
+  "version": "5.0.0",
+  "description": "一键导出京东校园版电子书",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js"
+  },
+  "author": "rmlzy@outlook.com",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.1.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "epub-gen": "^0.1.0",
+    "fs-extra": "^9.0.1",
+    "iconv-lite": "^0.6.2",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
+    "phantomjs-prebuilt": "^2.1.16",
+    "progress": "^2.0.3",
+    "query-string": "^6.13.8"
+  }
+}
