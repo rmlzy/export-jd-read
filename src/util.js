@@ -257,7 +257,7 @@ const fetchAndSaveChapter = async (book) => {
   const { bookId, readType, chapterId } = book;
   const chapterFlagTexts = [];
   try {
-    const k = encrypt(paraBuilder({ bookId, chapterId }));
+    const k = encrypt(paraBuilder({ encrypt: 1, bookId, chapterId }));
     const url = `https://cread.jd.com/read/gC.action?k=${k}&readType=${readType}&tob=${tob}`;
     const res = await fetch(url, { ...ajaxOptions, method: "GET" });
     const json = await res.json();
