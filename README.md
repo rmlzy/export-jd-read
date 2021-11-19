@@ -7,7 +7,7 @@
 第一步，下载代码, 安装依赖：
 
 ```shell
-git clone https://github.com/rmlzy/export_jd_read
+git clone https://github.com/rmlzy/export-jd-read.git
 cd export_jd_read
 npm i
 npm run start
@@ -19,6 +19,6 @@ npm run start
 
 第四步，执行 `npm run start` 后，输入图书 URL 中的 `bookId` 即可，如果图书中的图片较多，可能需要花费一些时间。
 
-
 ## 说明
+
 此脚本不会收集您的 cookie 信息，请放心使用。
