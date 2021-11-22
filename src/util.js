@@ -292,6 +292,10 @@ const fetchAndSaveChapter = async (book) => {
 const exportToPdf = async (book) => {
   const { bookId, bookName, readType } = book;
   console.log(`开始抓取《${bookName}》...`);
+
+  const outputDir = path.join(__dirname, "../output");
+  await fs.ensureDir(outputDir);
+
   const tempDir = path.join(__dirname, `../temp/${bookId}`);
   await fs.ensureDir(tempDir);
 
